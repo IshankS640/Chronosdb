@@ -1,0 +1,34 @@
+databases:
+  - name: chronos-db
+    databaseName: chronosdb
+    user: postgres
+    plan: free
+
+services:
+  # Backend API
+  - type: web
+    name: chronos-backend
+    env: python
+    plan: free
+    buildCommand: "cd backend && pip install -r requirements.txt && python migrate_and_seed.py"
+    startCommand: "cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: chronos-db
+          property: connectionString
+
+  # Frontend Dashboard
+  - type: web
+    name: chronos-frontend
+    env: python
+    plan: free
+    buildCommand: "cd frontend && pip install -r requirements.txt"
+    startCommand: "cd frontend && streamlit run app.py --server.port $PORT --server.address 0.0.0.0"
+    envVars:
+      - key: CHRONOS_API
+        fromService:
+          type: web
+          name: chronos-backend
+          property: url
+

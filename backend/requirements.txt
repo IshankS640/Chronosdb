@@ -1,0 +1,7 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+asyncpg>=0.30
+Faker>=24.0
+streamlit>=1.40
+requests>=2.31
+pandas>=2.0
