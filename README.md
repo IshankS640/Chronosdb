@@ -1,7 +1,9 @@
 # ChronosDB
-PostgreSQL 16 time-travel and high-concurrency engine.
+High-concurrency time-traveling database engine.
 
-## Architecture
-- PostgreSQL 16
-- FastAPI
-- Streamlit
+Components:
+1. BCNF Relational Schema & Constraints
+2. Queue Concurrency Control
+3. Cryptographic Self-Healing Audit Ledger
+4. Temporal Reconstructions
+5. Indexing Benchmarks
