@@ -1,2 +1,7 @@
 # ChronosDB
-A high-concurrency database benchmark and time-travel ledger for competitive programming platforms.
+PostgreSQL 16 time-travel and high-concurrency engine.
+
+## Architecture
+- PostgreSQL 16
+- FastAPI
+- Streamlit
