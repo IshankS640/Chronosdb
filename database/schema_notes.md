@@ -1,3 +1,3 @@
 # Schema Notes
-- Boyce-Codd Normal Form decomposition
-- Strict non-redundant relation attributes
+- Enums configured: user_role, submission_status, worker_status
+- Strict static typing on state transitions
