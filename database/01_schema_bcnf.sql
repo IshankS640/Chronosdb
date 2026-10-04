@@ -12,3 +12,12 @@ CREATE TABLE users (
     rating      INT NOT NULL DEFAULT 1500 CHECK (rating >= 0),
     created_at  TIMESTAMPTZ NOT NULL DEFAULT clock_timestamp()
 );
+
+CREATE TABLE contests (
+    contest_id  BIGSERIAL PRIMARY KEY,
+    title       VARCHAR(120) NOT NULL,
+    start_time  TIMESTAMPTZ NOT NULL,
+    end_time    TIMESTAMPTZ NOT NULL,
+    is_active   BOOLEAN NOT NULL DEFAULT FALSE,
+    CONSTRAINT ck_contest_duration CHECK (end_time > start_time)
+);
