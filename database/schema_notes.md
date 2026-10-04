@@ -1,3 +1,3 @@
 # Schema Notes
-- Enums configured: user_role, submission_status, worker_status
-- Strict static typing on state transitions
+- users table is in BCNF (handle and email are candidate keys)
+- contests table duration constraint verified
