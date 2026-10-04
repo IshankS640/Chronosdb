@@ -4,4 +4,11 @@ CREATE TYPE user_role AS ENUM ('CONTESTANT', 'JUDGE_ADMIN', 'AUDITOR');
 CREATE TYPE submission_status AS ENUM ('QUEUED', 'RUNNING', 'ACCEPTED', 'WRONG_ANSWER', 'TIME_LIMIT_EXCEEDED', 'MEMORY_LIMIT_EXCEEDED', 'COMPILATION_ERROR', 'SYSTEM_ERROR');
 CREATE TYPE worker_status AS ENUM ('IDLE', 'BUSY', 'OFFLINE');
 
--- Base relation definitions below
+CREATE TABLE users (
+    user_id     BIGSERIAL PRIMARY KEY,
+    handle      VARCHAR(40) NOT NULL UNIQUE,
+    email       VARCHAR(255) NOT NULL UNIQUE,
+    role        user_role NOT NULL DEFAULT 'CONTESTANT',
+    rating      INT NOT NULL DEFAULT 1500 CHECK (rating >= 0),
+    created_at  TIMESTAMPTZ NOT NULL DEFAULT clock_timestamp()
+);
