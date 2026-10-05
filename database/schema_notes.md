@@ -1,2 +1,2 @@
 # Schema Notes
-- test_cases table with SHA-256 hashes of test data
+- Problem execution limits: time_limit_ms, memory_limit_kb
