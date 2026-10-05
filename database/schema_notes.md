@@ -1,3 +1,3 @@
 # Schema Notes
-- users table is in BCNF (handle and email are candidate keys)
-- contests table duration constraint verified
+- problems table added: foreign key to contests
+- points boundary: 100 to 1000
