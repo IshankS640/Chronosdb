@@ -1,3 +1,2 @@
 # Schema Notes
-- problems table added: foreign key to contests
-- points boundary: 100 to 1000
+- test_cases table with SHA-256 hashes of test data
