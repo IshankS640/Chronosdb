@@ -1,2 +1,2 @@
 # Schema Notes
-- submissions table with source_code_hash and code_metadata jsonb
+- ck_source_code_hash enforces 64-char hex string
