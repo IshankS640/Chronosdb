@@ -1,2 +1,2 @@
 # Schema Notes
-- contest_registrations (contest_id, user_id) primary key
+- submissions table with source_code_hash and code_metadata jsonb
