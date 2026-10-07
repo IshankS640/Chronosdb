@@ -1,3 +1,2 @@
 # Schema Notes
-- leaderboard_scores with HMAC signature column
-- intrusion_alerts table for security logging
+- All tables 3NF and BCNF normalized without transitive anomalies
