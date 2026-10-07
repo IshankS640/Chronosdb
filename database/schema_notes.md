@@ -1,2 +1,2 @@
 # Schema Notes
-- submission_queue table for distributed judging dispatch
+- judge_workers table with processed_count metric
