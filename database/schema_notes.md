@@ -1,2 +1,3 @@
 # Schema Notes
-- judge_workers table with processed_count metric
+- leaderboard_scores with HMAC signature column
+- intrusion_alerts table for security logging
