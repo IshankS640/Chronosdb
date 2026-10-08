@@ -1,2 +1,2 @@
 # Schema Notes
-- All tables 3NF and BCNF normalized without transitive anomalies
+- score_audit_ledger with blockchain-like prev_event_hash linkage
