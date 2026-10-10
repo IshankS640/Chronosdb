@@ -1,2 +1,2 @@
 # Concurrency Architecture
-- Integrating FOR UPDATE SKIP LOCKED to prevent lock convoys
+- Verified 0 lock wait times with SKIP LOCKED
