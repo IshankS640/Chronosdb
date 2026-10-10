@@ -1,2 +1,2 @@
 # Concurrency Architecture
-- Drafting sp_claim_next_submission with atomic worker locking
+- Integrating FOR UPDATE SKIP LOCKED to prevent lock convoys
