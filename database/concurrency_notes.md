@@ -1,2 +1,2 @@
 # Concurrency Architecture
-- Dynamic heartbeat timestamp update on queue claim
+- vw_active_lock_telemetry maps pg_locks and pg_stat_activity
