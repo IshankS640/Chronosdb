@@ -1,2 +1,2 @@
 # Concurrency Architecture
-- Worker status transition to BUSY during execution
+- Benchmark sub-millisecond claim latency
