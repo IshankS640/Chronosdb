@@ -1,2 +1,2 @@
 # Concurrency Architecture
-- Queue throughput verified at >2000 claims/sec
+- Complete worker state machine lifecycle
