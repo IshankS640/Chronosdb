@@ -1,2 +1,2 @@
 # Concurrency Architecture
-- Dead worker reclamation strategy
+- Worker status transition to BUSY during execution
