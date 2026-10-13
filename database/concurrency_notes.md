@@ -1,2 +1,2 @@
 # Concurrency Architecture
-- Verified zero deadlocks under concurrent multi-client worker pools
+- Recommended pool sizes and connection limits
