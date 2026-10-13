@@ -1,2 +1,2 @@
 # Concurrency Architecture
-- Complete worker state machine lifecycle
+- Verified zero deadlocks under concurrent multi-client worker pools
