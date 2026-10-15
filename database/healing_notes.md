@@ -1,2 +1,2 @@
 # Self-Healing & Cryptographic Ledger
-- Genesis block sha256 hash defined for chain origin
+- trg_ledger_immutable_row raises exception on UPDATE or DELETE
