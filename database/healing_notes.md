@@ -1,2 +1,2 @@
 # Self-Healing & Cryptographic Ledger
-- Event hash chains prev_event_hash with current state
+- Genesis block sha256 hash defined for chain origin
