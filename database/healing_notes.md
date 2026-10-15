@@ -1,2 +1,2 @@
 # Self-Healing & Cryptographic Ledger
-- Signature matches python backend hmac implementation
+- Event hash chains prev_event_hash with current state
