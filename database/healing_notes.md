@@ -1,2 +1,2 @@
 # Self-Healing & Cryptographic Ledger
-- Detailed alert rows logged with user, IP, attempted points
+- Restores OLD.total_points and OLD.total_penalty_sec
