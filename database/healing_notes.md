@@ -1,2 +1,2 @@
 # Self-Healing & Cryptographic Ledger
-- Verified ledger is append-only
+- trg_heal_leaderboard intercepts unauthorized score updates
