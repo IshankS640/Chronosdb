@@ -1,2 +1,2 @@
 # Self-Healing & Cryptographic Ledger
-- Legitimate updates update signature and verify successfully
+- Timestamps normalized to ISO-8601 UTC representation
