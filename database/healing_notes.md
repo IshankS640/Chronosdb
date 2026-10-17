@@ -1,2 +1,2 @@
 # Self-Healing & Cryptographic Ledger
-- Restores OLD.total_points and OLD.total_penalty_sec
+- sp_record_verdict manages transaction boundary
