@@ -1,2 +1,2 @@
 # Self-Healing & Cryptographic Ledger
-- Iterates through events checking hash continuity
+- pinpoints first_broken_event_id on tampering
