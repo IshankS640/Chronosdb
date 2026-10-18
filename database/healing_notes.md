@@ -1,2 +1,2 @@
 # Self-Healing & Cryptographic Ledger
-- Timestamps normalized to ISO-8601 UTC representation
+- Iterates through events checking hash continuity
