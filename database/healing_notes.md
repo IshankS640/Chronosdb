@@ -1,2 +1,2 @@
 # Self-Healing & Cryptographic Ledger
-- trg_check_registration_window prevents registrations after contest end
+- Full proof of audit chain and tamper-resistance
