@@ -1,2 +1,2 @@
 # Temporal Modeling
-- DISTINCT ON(user_id) with ORDER BY recorded_at DESC
+- Validated against live board at contest end timestamp
