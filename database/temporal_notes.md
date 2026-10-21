@@ -1,2 +1,2 @@
 # Temporal Modeling
-- mv_contest_analytics precomputes contest metrics
+- mv_top_performers with unique index on user_id
