@@ -1,2 +1,2 @@
 # Temporal Modeling
-- Validated against live board at contest end timestamp
+- mv_contest_analytics precomputes contest metrics
