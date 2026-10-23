@@ -1,2 +1,2 @@
 # Indexing Strategies
-- fn_explain_query extracts JSON explain plan and buffers
+- Observed >50x speedup with index scan vs seq scan
