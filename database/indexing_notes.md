@@ -1,2 +1,2 @@
 # Indexing Strategies
-- GIN index jsonb_path_ops on code_metadata -> ast_tags
+- fn_explain_query extracts JSON explain plan and buffers
