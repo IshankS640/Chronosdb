@@ -10,7 +10,8 @@ services:
     name: chronos-backend
     env: python
     plan: free
-    buildCommand: "cd backend && pip install -r requirements.txt && python migrate_and_seed.py"
+    buildCommand: "cd backend && pip install -r requirements.txt"
+    preDeployCommand: "cd backend && python migrate_and_seed.py"
     startCommand: "cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT"
     envVars:
       - key: DATABASE_URL

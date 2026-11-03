@@ -20,6 +20,18 @@ async def run_migrations():
     print(f"Connecting to database: {DSN.split('@')[-1]}")
     conn = await asyncpg.connect(DSN)
     
+    # Check if already migrated and seeded
+    try:
+        table_exists = await conn.fetchval("SELECT to_regclass('public.users')")
+        if table_exists:
+            count = await conn.fetchval("SELECT count(*) FROM users")
+            if count and count >= 2000:
+                print(f"Database already initialized with {count} users. Skipping setup.")
+                await conn.close()
+                return True
+    except Exception as e:
+        print(f"Check existing tables note: {e}")
+    
     # Locate database folder
     db_dir = Path(__file__).resolve().parent.parent / "database"
     if not db_dir.exists():
@@ -47,4 +59,3 @@ async def run_migrations():
 
 if __name__ == "__main__":
     asyncio.run(run_migrations())
-
