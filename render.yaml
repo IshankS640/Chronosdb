@@ -1,7 +1,7 @@
 databases:
   - name: chronos-db
     databaseName: chronosdb
-    user: postgres
+    user: chronos_admin
     plan: free
 
 services:
@@ -30,5 +30,4 @@ services:
         fromService:
           type: web
           name: chronos-backend
-          property: url
-
+          property: hostport

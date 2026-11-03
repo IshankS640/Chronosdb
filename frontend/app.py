@@ -7,6 +7,8 @@ import requests
 import streamlit as st
 
 API = os.getenv("CHRONOS_API", "http://localhost:8000")
+if not API.startswith("http://") and not API.startswith("https://"):
+    API = f"http://{API}"
 CONTEST_ID = 1
 ss = st.session_state
 
