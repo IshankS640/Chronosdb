@@ -11,7 +11,6 @@ services:
     env: python
     plan: free
     buildCommand: "cd backend && pip install -r requirements.txt"
-    preDeployCommand: "cd backend && python migrate_and_seed.py"
     startCommand: "python start_all.py"
     envVars:
       - key: DATABASE_URL
